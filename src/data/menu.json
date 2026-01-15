@@ -1,0 +1,316 @@
+{
+    "weeklyMenu": {
+        "month": "Ocak 2026",
+        "weeks": [
+            {
+                "weekNumber": 1,
+                "weekStart": "2026-01-05",
+                "weekEnd": "2026-01-09",
+                "days": [
+                    {
+                        "day": "Pazartesi",
+                        "date": "2026-01-05",
+                        "meals": {
+                            "soup": "Mercimek Çorbası",
+                            "mainDish": "Etli Kuru Fasulye",
+                            "rice": "Tereyağlı Pirinç Pilavı",
+                            "salad": "Mevsim Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Salı",
+                        "date": "2026-01-06",
+                        "meals": {
+                            "soup": "Ezogelin Çorbası",
+                            "mainDish": "Tavuk Sote",
+                            "rice": "Bulgur Pilavı",
+                            "salad": "Çoban Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Çarşamba",
+                        "date": "2026-01-07",
+                        "meals": {
+                            "soup": "Yayla Çorbası",
+                            "mainDish": "İzmir Köfte",
+                            "rice": "Şehriyeli Pirinç Pilavı",
+                            "salad": "Cacık",
+                            "dessert": "Sütlaç",
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Perşembe",
+                        "date": "2026-01-08",
+                        "meals": {
+                            "soup": "Domates Çorbası",
+                            "mainDish": "Karnıyarık",
+                            "rice": "Tereyağlı Pirinç Pilavı",
+                            "salad": "Mevsim Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Cuma",
+                        "date": "2026-01-09",
+                        "meals": {
+                            "soup": "Tarhana Çorbası",
+                            "mainDish": "Piliç Baget",
+                            "rice": "Soslu Makarna",
+                            "salad": "Turşu",
+                            "dessert": "Revani",
+                            "drink": "Ayran"
+                        }
+                    }
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "weekStart": "2026-01-12",
+                "weekEnd": "2026-01-16",
+                "days": [
+                    {
+                        "day": "Pazartesi",
+                        "date": "2026-01-12",
+                        "meals": {
+                            "soup": "Sebze Çorbası",
+                            "mainDish": "Tas Kebabı",
+                            "rice": "Bulgur Pilavı",
+                            "salad": "Mevsim Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Salı",
+                        "date": "2026-01-13",
+                        "meals": {
+                            "soup": "Mercimek Çorbası",
+                            "mainDish": "Tavuklu Bezelye",
+                            "rice": "Tereyağlı Pirinç Pilavı",
+                            "salad": "Çoban Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Çarşamba",
+                        "date": "2026-01-14",
+                        "meals": {
+                            "soup": "Ezogelin Çorbası",
+                            "mainDish": "Kadınbudu Köfte",
+                            "rice": "Şehriyeli Pirinç Pilavı",
+                            "salad": "Patates Salatası",
+                            "dessert": "Kazandibi",
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Perşembe",
+                        "date": "2026-01-15",
+                        "meals": {
+                            "soup": "Terbiyeli Tavuk Çorbası",
+                            "mainDish": "Etli Nohut",
+                            "rice": "Bulgur Pilavı",
+                            "salad": "Mevsim Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Cuma",
+                        "date": "2026-01-16",
+                        "meals": {
+                            "soup": "Şehriye Çorbası",
+                            "mainDish": "Köri Soslu Tavuk",
+                            "rice": "Tereyağlı Pirinç Pilavı",
+                            "salad": "Turşu",
+                            "dessert": "Keşkül",
+                            "drink": "Ayran"
+                        }
+                    }
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "weekStart": "2026-01-19",
+                "weekEnd": "2026-01-23",
+                "days": [
+                    {
+                        "day": "Pazartesi",
+                        "date": "2026-01-19",
+                        "meals": {
+                            "soup": "Mantar Çorbası",
+                            "mainDish": "Çökertme Kebabı",
+                            "rice": "Şehriyeli Pirinç Pilavı",
+                            "salad": "Mevsim Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Salı",
+                        "date": "2026-01-20",
+                        "meals": {
+                            "soup": "Mercimek Çorbası",
+                            "mainDish": "Fırın Tavuk",
+                            "rice": "Bulgur Pilavı",
+                            "salad": "Çoban Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Çarşamba",
+                        "date": "2026-01-21",
+                        "meals": {
+                            "soup": "Toyga Çorbası",
+                            "mainDish": "Hasanpaşa Köfte",
+                            "rice": "Tereyağlı Pirinç Pilavı",
+                            "salad": "Cacık",
+                            "dessert": "Profiterol",
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Perşembe",
+                        "date": "2026-01-22",
+                        "meals": {
+                            "soup": "Ezogelin Çorbası",
+                            "mainDish": "Sebzeli Güveç",
+                            "rice": "Bulgur Pilavı",
+                            "salad": "Mevsim Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Cuma",
+                        "date": "2026-01-23",
+                        "meals": {
+                            "soup": "Yayla Çorbası",
+                            "mainDish": "Çoban Kavurma",
+                            "rice": "Şehriyeli Pirinç Pilavı",
+                            "salad": "Turşu",
+                            "dessert": "Baklava",
+                            "drink": "Ayran"
+                        }
+                    }
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "weekStart": "2026-01-26",
+                "weekEnd": "2026-01-30",
+                "days": [
+                    {
+                        "day": "Pazartesi",
+                        "date": "2026-01-26",
+                        "meals": {
+                            "soup": "Süzme Mercimek Çorbası",
+                            "mainDish": "Kıymalı Bezelye",
+                            "rice": "Tereyağlı Pirinç Pilavı",
+                            "salad": "Mevsim Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Salı",
+                        "date": "2026-01-27",
+                        "meals": {
+                            "soup": "Tarhana Çorbası",
+                            "mainDish": "Tavuk Tantuni + Lavaş",
+                            "rice": "Bulgur Pilavı",
+                            "salad": "Çoban Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Çarşamba",
+                        "date": "2026-01-28",
+                        "meals": {
+                            "soup": "İşkembe Çorbası",
+                            "mainDish": "Fırın Kanat",
+                            "rice": "Şehriyeli Pirinç Pilavı",
+                            "salad": "Patates Salatası",
+                            "dessert": "Trileçe",
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Perşembe",
+                        "date": "2026-01-29",
+                        "meals": {
+                            "soup": "Şehriye Çorbası",
+                            "mainDish": "Kıymalı Taze Fasulye",
+                            "rice": "Bulgur Pilavı",
+                            "salad": "Mevsim Salatası",
+                            "dessert": null,
+                            "drink": "Ayran"
+                        }
+                    },
+                    {
+                        "day": "Cuma",
+                        "date": "2026-01-30",
+                        "meals": {
+                            "soup": "Ezogelin Çorbası",
+                            "mainDish": "Special Pirzola",
+                            "rice": "Tereyağlı Pirinç Pilavı",
+                            "salad": "Turşu",
+                            "dessert": "Şekerpare",
+                            "drink": "Kola"
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "mealCategories": {
+        "soup": "Çorba",
+        "mainDish": "Ana Yemek",
+        "rice": "Pilav/Makarna",
+        "salad": "Salata",
+        "dessert": "Tatlı",
+        "drink": "İçecek"
+    },
+    "monthlyPlans": [
+        {
+            "id": 1,
+            "name": "Temel Paket",
+            "description": "Günlük çorba + ana yemek + pilav + salata",
+            "pricePerDay": 200,
+            "features": [
+                "Günlük çorba",
+                "Ana yemek",
+                "Pilav veya makarna",
+                "Mevsim salatası",
+                "Haftada 2 gün tatlı"
+            ],
+            "note": "20'den fazla çalışanlı yerler için geçerlidir",
+            "popular": false
+        },
+        {
+            "id": 2,
+            "name": "Premium Paket",
+            "description": "Temel paket + özel termos teslimat",
+            "pricePerDay": 240,
+            "features": [
+                "Günlük çorba",
+                "Ana yemek",
+                "Pilav veya makarna",
+                "Mevsim salatası",
+                "Haftada 2 gün tatlı",
+                "Özel termos kaplarımızla teslimat"
+            ],
+            "note": null,
+            "popular": true
+        }
+    ]
+}

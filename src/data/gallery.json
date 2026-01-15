@@ -1,0 +1,104 @@
+{
+    "gallery": [
+        {
+            "id": 1,
+            "src": "/images/Menüler/Tüm Menüler/Menü1.BrokoliÇorbası.MeksikaSosluTavuk.PenneMakarna.MevsimSalata.png",
+            "alt": "Brokoli Çorbası, Meksika Soslu Tavuk, Penne Makarna",
+            "category": "Menü"
+        },
+        {
+            "id": 2,
+            "src": "/images/Menüler/Tüm Menüler/Menü2.YoğurtÇorbası.EtliNohut.ŞehriyeliPilav.png",
+            "alt": "Yoğurt Çorbası, Etli Nohut, Şehriyeli Pilav",
+            "category": "Menü"
+        },
+        {
+            "id": 3,
+            "src": "/images/Menüler/Tüm Menüler/Menü3.EzogelinÇorbası.OrmanKebabı.BulgurPilavı.png",
+            "alt": "Ezogelin Çorbası, Orman Kebabı, Bulgur Pilavı",
+            "category": "Menü"
+        },
+        {
+            "id": 4,
+            "src": "/images/Menüler/Tüm Menüler/Menü4.MercimekÇorbası.TaşKebabı.TereyağlıPilav.png",
+            "alt": "Mercimek Çorbası, Taş Kebabı, Tereyağlı Pilav",
+            "category": "Menü"
+        },
+        {
+            "id": 5,
+            "src": "/images/Menüler/Tüm Menüler/Menü5.SebzeÇorbası.TavukSote.SosluMakarna.png",
+            "alt": "Sebze Çorbası, Tavuk Sote, Soslu Makarna",
+            "category": "Menü"
+        },
+        {
+            "id": 6,
+            "src": "/images/Menüler/Tüm Menüler/Menü6.IspanakÇorbası.EtliKuruFasulye.ŞehriyeliPilav.png",
+            "alt": "Ispanak Çorbası, Etli Kuru Fasulye, Şehriyeli Pilav",
+            "category": "Menü"
+        },
+        {
+            "id": 7,
+            "src": "/images/Menüler/Tüm Menüler/Menü7.MantarÇorbası.PiliçBaget.Spagetti.png",
+            "alt": "Mantar Çorbası, Piliç Baget, Spagetti",
+            "category": "Menü"
+        },
+        {
+            "id": 8,
+            "src": "/images/Menüler/Tüm Menüler/Menü8.DomatesÇorbası.EtliKışTürlüsü.ŞehriyeliPilav.png",
+            "alt": "Domates Çorbası, Etli Kış Türlüsü, Şehriyeli Pilav",
+            "category": "Menü"
+        },
+        {
+            "id": 9,
+            "src": "/images/Menüler/Tüm Menüler/Menü9.SütlüMısırÇorbası.PatatesOturtma.PirinçPilavı.png",
+            "alt": "Sütlü Mısır Çorbası, Patates Oturtma, Pirinç Pilavı",
+            "category": "Menü"
+        },
+        {
+            "id": 10,
+            "src": "/images/Menüler/Tüm Menüler/Menü10.EzogelinÇorbası.KöriSosluTavuk.TereyağlıPenneMakarna.png",
+            "alt": "Ezogelin Çorbası, Köri Soslu Tavuk, Tereyağlı Penne",
+            "category": "Menü"
+        },
+        {
+            "id": 11,
+            "src": "/images/Menüler/Tüm Menüler/Menü11.TarhanaÇorbası.TavukSote.PirinçPilavı.png",
+            "alt": "Tarhana Çorbası, Tavuk Sote, Pirinç Pilavı",
+            "category": "Menü"
+        },
+        {
+            "id": 12,
+            "src": "/images/Menüler/Tüm Menüler/Menü12.BrokoliÇorbası.PatlıcanMusakka.SebzeliPilav.png",
+            "alt": "Brokoli Çorbası, Patlıcan Musakka, Sebzeli Pilav",
+            "category": "Menü"
+        },
+        {
+            "id": 13,
+            "src": "/images/Menüler/Tüm Menüler/Menü19.MercimekÇorbası.EtliNohut.PirinçPilavı.png",
+            "alt": "Mercimek Çorbası, Etli Nohut, Pirinç Pilavı",
+            "category": "Menü"
+        },
+        {
+            "id": 14,
+            "src": "/images/Menüler/Tüm Menüler/Menü18.DomatesÇorbası.BiberDolması.KayseriMantısı.png",
+            "alt": "Domates Çorbası, Biber Dolması, Kayseri Mantısı",
+            "category": "Menü"
+        },
+        {
+            "id": 15,
+            "src": "/images/Menüler/Tüm Menüler/Menü16.SebzeÇorbası.HünkarBeğendi.ŞehriyeliPilav.png",
+            "alt": "Sebze Çorbası, Hünkar Beğendi, Şehriyeli Pilav",
+            "category": "Menü"
+        },
+        {
+            "id": 16,
+            "src": "/images/Menüler/Tüm Menüler/Menü14.YaylaÇorbası.OrmanKebabı.BulgurPilavı.png",
+            "alt": "Yayla Çorbası, Orman Kebabı, Bulgur Pilavı",
+            "category": "Menü"
+        }
+    ],
+    "categories": [
+        "Tümü",
+        "Menü"
+    ]
+}

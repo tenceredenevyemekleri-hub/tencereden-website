@@ -1,0 +1,126 @@
+{
+  "siteInfo": {
+    "name": "Tencereden Ev Yemekleri",
+    "tagline": "Sıcak ve Lezzetli Ev Yemekleri",
+    "description": "Ofisler için taze, sağlıklı ve kaliteli yemek hizmeti.",
+    "phone": "+905015928758",
+    "whatsapp": "905015928758",
+    "email": "info@tencereden.com",
+    "address": "Kadıköy/İstanbul, Türkiye",
+    "workingHours": {
+      "days": "Pazartesi - Cuma",
+      "hours": "09:00 - 17:00",
+      "closed": "Cumartesi - Pazar"
+    },
+    "socialMedia": {
+      "instagram": "",
+      "facebook": "",
+      "twitter": ""
+    }
+  },
+  "hero": {
+    "title": "Sıcak ve Lezzetli Ev Yemekleri",
+    "subtitle": "Ofisler için taze, sağlıklı ve kaliteli yemek hizmeti. Geleneksel tariflerle hazırlanan yemeklerimizi ofisinize getiriyoruz.",
+    "ctaText": "Hemen Başvurun",
+    "ctaLink": "/basvuru"
+  },
+  "features": [
+    {
+      "id": 1,
+      "icon": "chef",
+      "image": "/images/features/tas-kebabi.png",
+      "title": "Geleneksel Lezzetler",
+      "description": "En taze malzemelerle hazırlanan geleneksel Türk mutfağı tarifleri. Ev yemeklerinin sıcak ve samimi tadı."
+    },
+    {
+      "id": 2,
+      "icon": "heart",
+      "image": "/images/features/ispanak-corbasi.png",
+      "title": "Sağlıklı Seçenekler",
+      "description": "Yüksek besin değerine sahip, dengeli ve sağlıklı menüler. Kalori bilgisi ile şeffaf beslenme."
+    },
+    {
+      "id": 3,
+      "icon": "truck",
+      "image": "/images/features/termosta-yemek.png",
+      "title": "Zamanında Teslimat",
+      "description": "Her gün öğle yemeği saatinde sıcak ve taze yemekleriniz kapınızda. Dakik ve güvenilir hizmet."
+    }
+  ],
+  "about": {
+    "title": "Hikayemiz",
+    "content": "Tencereden Ev Yemekleri olarak, 2024 yılından bu yana İstanbul'un çeşitli bölgelerindeki ofislere ev yemeği hizmeti sunuyoruz. Amacımız, çalışan profesyonellerin sağlıklı ve lezzetli yemeklere kolayca ulaşmasını sağlamak.\n\nHer gün taze malzemelerle hazırlanan menülerimiz, geleneksel Türk mutfağının en sevilen tatlarını sofranıza taşıyor. Katkı maddesi kullanmadan, evde pişirilen yemeklerin tadını ofisinize getiriyoruz.",
+    "stats": [
+      {
+        "value": "500+",
+        "label": "Mutlu Müşteri"
+      },
+      {
+        "value": "10+",
+        "label": "Hizmet Verilen Ofis"
+      },
+      {
+        "value": "1000+",
+        "label": "Günlük Porsiyon"
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Ahmet Y.",
+      "company": "Tech Startup",
+      "content": "Ofisimizde yemek sorunu artık yok. Her gün taze ve lezzetli yemekler geliyor. Çalışanlarımız çok memnun.",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "name": "Zeynep K.",
+      "company": "Hukuk Bürosu",
+      "content": "Ev yemeği tadında, sağlıklı öğle yemekleri için harika bir seçenek. Menü çeşitliliği de çok iyi.",
+      "rating": 5
+    },
+    {
+      "id": 3,
+      "name": "Mehmet A.",
+      "company": "Finans Şirketi",
+      "content": "Zamanında teslimat ve kaliteli hizmet. İş yoğunluğunda sağlıklı beslenmeyi kolaylaştırıyorlar.",
+      "rating": 5
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Günlük Yemek Servisi",
+      "description": "Hafta içi her gün öğle yemeği servisi. Değişen menülerle her gün farklı tatlar.",
+      "features": [
+        "Günlük taze hazırlık",
+        "3 çeşit ana yemek",
+        "Salata dahil",
+        "Tatlı opsiyonu"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Aylık Abonelik",
+      "description": "Aylık paketlerle avantajlı fiyatlar. Planlı beslenme programları.",
+      "features": [
+        "%15 indirim",
+        "Esnek menü seçimi",
+        "Diyet opsiyonları",
+        "Öncelikli teslimat"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Özel Etkinlik Catering",
+      "description": "Toplantılar, seminerler ve özel günler için catering hizmeti.",
+      "features": [
+        "Özel menü tasarımı",
+        "Servis ekibi",
+        "Dekorasyon desteği",
+        "Her bütçeye uygun"
+      ]
+    }
+  ]
+}
