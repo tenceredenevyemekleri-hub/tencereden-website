@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   description: "Ofisler için taze, sağlıklı ve kaliteli ev yemeği hizmeti. Geleneksel Türk mutfağından lezzetler, aylık menü planları ve kurumsal catering.",
   keywords: "ev yemeği, catering, ofis yemeği, kurumsal yemek, İstanbul catering, günlük yemek servisi",
   authors: [{ name: "Tencereden Ev Yemekleri" }],
+  icons: {
+    icon: [
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', type: 'image/png' },
+    ],
+  },
   openGraph: {
     title: "Tencereden Ev Yemekleri | Ofisler için Catering Hizmeti",
     description: "Ofisler için taze, sağlıklı ve kaliteli ev yemeği hizmeti.",
@@ -16,11 +24,20 @@ export const metadata: Metadata = {
     siteName: "Tencereden Ev Yemekleri",
     locale: "tr_TR",
     type: "website",
+    images: [
+      {
+        url: "https://tencereden.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Tencereden Ev Yemekleri Logo",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tencereden Ev Yemekleri",
     description: "Ofisler için taze, sağlıklı ve kaliteli ev yemeği hizmeti.",
+    images: ["https://tencereden.com/og-image.png"],
   },
   robots: {
     index: true,
