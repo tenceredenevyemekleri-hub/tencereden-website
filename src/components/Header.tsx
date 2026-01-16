@@ -27,8 +27,7 @@ export default function Header() {
     return (
         <>
             <header
-                className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-soft py-2"
-                style={{ backgroundColor: '#F5E6D3' }}
+                className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-soft py-2 bg-white"
             >
                 <div className="mx-auto px-2 md:px-8">
                     <div className="flex items-center justify-between">
