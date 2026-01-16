@@ -57,15 +57,17 @@ export default function BasvuruPage() {
                     'Accept': 'application/json'
                 },
                 body: JSON.stringify({
-                    companyName: formData.companyName,
-                    contactName: formData.contactName,
-                    email: formData.email,
-                    phone: formData.phone,
-                    employeeCount: formData.employeeCount,
-                    address: formData.address,
-                    selectedPlan: formData.selectedPlan,
-                    dietaryNeeds: formData.dietaryNeeds,
-                    message: formData.message
+                    _subject: `Yeni Başvuru: ${formData.companyName}`,
+                    _replyto: formData.email,
+                    'Şirket Adı': formData.companyName,
+                    'Yetkili Kişi': formData.contactName,
+                    'E-posta': formData.email,
+                    'Telefon': formData.phone,
+                    'Kişi Sayısı': formData.employeeCount,
+                    'Adres': formData.address,
+                    'Seçilen Paket': formData.selectedPlan || 'Belirtilmedi',
+                    'Diyet İhtiyaçları': formData.dietaryNeeds || 'Yok',
+                    'Mesaj': formData.message || 'Yok'
                 })
             });
 
@@ -169,6 +171,9 @@ ${formData.message ? `\nMesaj: ${formData.message}` : ''}`;
                         {/* Form */}
                         <div className="lg:col-span-2">
                             <form onSubmit={handleSubmit} className="space-y-6">
+                                {/* Honeypot field - hidden from users, helps prevent spam */}
+                                <input type="text" name="_gotcha" style={{ display: 'none' }} tabIndex={-1} autoComplete="off" />
+
                                 {/* Company Info */}
                                 <div>
                                     <h3 className="font-serif text-xl font-semibold text-brand-brown-dark mb-4">
