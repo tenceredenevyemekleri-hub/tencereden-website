@@ -104,14 +104,38 @@ export default function Header() {
             <div
                 className={`mobile-menu ${isMobileMenuOpen ? 'open' : 'closed'}`}
             >
-                <div className="flex flex-col h-full pt-20 pb-6 px-6">
-                    <nav className="flex-1 flex flex-col gap-2">
+                {/* Mobile Menu Header */}
+                <div className="flex items-center justify-between px-4 py-4 border-b border-gray-100">
+                    <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
+                        <div className="relative w-16 h-16">
+                            <Image
+                                src="/images/Logo/Adsız tasarım.png"
+                                alt="Tencereden"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                    </Link>
+                    <button
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="p-2 rounded-lg hover:bg-gray-100"
+                        aria-label="Menüyü kapat"
+                    >
+                        <svg className="w-6 h-6 text-brand-brown-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                {/* Mobile Menu Content */}
+                <div className="flex flex-col h-full px-4 py-6">
+                    <nav className="flex flex-col gap-1">
                         {navigation.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="py-3 px-4 text-lg font-medium text-brand-brown-dark hover:text-brand-teal hover:bg-gray-50 rounded-lg transition-colors"
+                                className="py-4 px-4 text-lg font-medium text-brand-brown-dark hover:text-brand-teal hover:bg-gray-50 rounded-lg transition-colors border-b border-gray-100"
                             >
                                 {item.name}
                             </Link>
@@ -120,7 +144,7 @@ export default function Header() {
                     <Link
                         href="/basvuru"
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="btn-primary text-center mt-4"
+                        className="btn-primary text-center mt-6"
                     >
                         Hemen Başvurun
                     </Link>
