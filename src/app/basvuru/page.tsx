@@ -49,13 +49,31 @@ export default function BasvuruPage() {
         setError('');
 
         try {
-            // Simulate form submission
-            await new Promise((resolve) => setTimeout(resolve, 1500));
+            // Send form data to Formspree
+            const response = await fetch('https://formspree.io/f/xkooogra', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    companyName: formData.companyName,
+                    contactName: formData.contactName,
+                    email: formData.email,
+                    phone: formData.phone,
+                    employeeCount: formData.employeeCount,
+                    address: formData.address,
+                    selectedPlan: formData.selectedPlan,
+                    dietaryNeeds: formData.dietaryNeeds,
+                    message: formData.message
+                })
+            });
 
-            // In production, you would send this data to your backend or email service
-            console.log('Form submitted:', formData);
-
-            setIsSubmitted(true);
+            if (response.ok) {
+                setIsSubmitted(true);
+            } else {
+                throw new Error('Form submission failed');
+            }
         } catch {
             setError('Bir hata oluştu. Lütfen tekrar deneyin veya WhatsApp üzerinden ulaşın.');
         } finally {
