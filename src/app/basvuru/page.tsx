@@ -284,7 +284,7 @@ ${formData.message ? `\nMesaj: ${formData.message}` : ''}`;
                                                 <option value="">Seçiniz (Opsiyonel)</option>
                                                 {monthlyPlans.map((plan) => (
                                                     <option key={plan.id} value={plan.name}>
-                                                        {plan.name} - ₺{plan.pricePerMonth}/ay
+                                                        {plan.name} - ₺{plan.pricePerDay}/gün
                                                     </option>
                                                 ))}
                                                 <option value="ozel">Özel Teklif İstiyorum</option>
