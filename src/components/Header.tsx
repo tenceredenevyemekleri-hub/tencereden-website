@@ -7,6 +7,8 @@ import { useState, useEffect } from 'react';
 const navigation = [
     { name: 'Ana Sayfa', href: '/' },
     { name: 'Menü', href: '/menu' },
+    { name: '2 Lokma', href: '/iki-lokma' },
+    { name: 'Konserve', href: '/konserve' },
     { name: 'Hizmetler', href: '/hizmetler' },
     { name: 'Hakkımızda', href: '/hakkimizda' },
     { name: 'Başvuru', href: '/basvuru' },
