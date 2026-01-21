@@ -49,10 +49,10 @@ export default function KonserveUrunleriPage() {
             <section className="pt-32 pb-16 bg-gradient-cream">
                 <div className="container mx-auto text-center">
                     <h1 className="font-serif text-4xl md:text-5xl font-bold text-brand-brown-dark mb-4">
-                        Özel Yapım Konserve Ürünleri
+                        Doğal Kavanoz Yemekleri
                     </h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Katkısız, doğal ve geleneksel yöntemlerle hazırlanan ev yapımı konserve ürünleri.
+                        Katkısız, doğal ve geleneksel yöntemlerle hazırlanan ev yapımı kavanoz yemekleri.
                         Tarladan sofranıza, lezzet garantili.
                     </p>
                 </div>
@@ -87,7 +87,7 @@ export default function KonserveUrunleriPage() {
             <section className="section bg-gray-50">
                 <div className="container mx-auto">
                     <h2 className="font-serif text-3xl font-bold text-brand-brown-dark text-center mb-12">
-                        Neden Bizim Konservelerimiz?
+                        Neden Bizim Kavanoz Yemeklerimiz?
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="text-center">
@@ -128,7 +128,7 @@ export default function KonserveUrunleriPage() {
                         Sipariş Vermek İster Misiniz?
                     </h2>
                     <p className="text-gray-600 mb-8 max-w-xl mx-auto">
-                        Konserve ürünlerimiz için bizimle iletişime geçin. Toplu siparişlerde özel fiyatlar sunuyoruz.
+                        Kavanoz yemeklerimiz için bizimle iletişime geçin. Toplu siparişlerde özel fiyatlar sunuyoruz.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link href="/basvuru" className="btn-primary">
