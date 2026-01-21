@@ -57,12 +57,13 @@ export default function IkiLokmaPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {products.map((product) => (
                             <div key={product.id} className="card group">
-                                <div className="relative h-64 mb-4 rounded-lg overflow-hidden">
+                                <div className="relative h-72 mb-4 rounded-lg overflow-hidden bg-white border border-gray-100">
                                     <Image
                                         src={product.image}
                                         alt={product.name}
                                         fill
-                                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                        className="object-contain p-2 group-hover:scale-105 transition-transform duration-300"
                                     />
                                 </div>
                                 <h3 className="font-serif text-xl font-semibold text-brand-brown-dark mb-2">
