@@ -37,12 +37,18 @@ const StarIcon = () => (
 
 export default function Home() {
   const { hero, features, testimonials, about } = content;
-  const { weeklyMenu } = menuData;
+  const { months } = menuData;
 
-  // Get today's menu - flatten all days from all weeks
-  const allDays = weeklyMenu.weeks.flatMap(week => week.days);
-  const today = new Date().toLocaleDateString('tr-TR', { weekday: 'long' });
-  const todayMenu = allDays.find(d => d.day.toLowerCase() === today.toLowerCase());
+  // Get today's menu - flatten all days from all weeks in the current month
+  // Assuming the first month is relevant or checking current date
+  const currentMonth = months[0];
+  const allDays = currentMonth.weeks.flatMap(week => week.days);
+
+  // Format today as YYYY-MM-DD to match json
+  const todayDate = new Date().toISOString().split('T')[0];
+
+  // Find today's menu by exact date match first, fallback to day name if needed (but date is better)
+  const todayMenu = allDays.find(d => d.date === todayDate);
 
   return (
     <>
@@ -151,20 +157,22 @@ export default function Home() {
               <div className="bg-white rounded-3xl shadow-soft-lg p-8 md:p-12 text-center">
                 <div className="flex items-center justify-center gap-3 mb-8">
                   <span className="day-badge text-lg px-6 py-2">{todayMenu.day}</span>
+                  <span className="text-gray-500">{new Date(todayMenu.date).toLocaleDateString('tr-TR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 justify-items-center">
                   <div className="text-center w-full">
+                    <span className="text-sm font-semibold text-brand-teal tracking-wider uppercase block mb-2">ÇORBA</span>
+                    <h3 className="font-serif text-xl font-bold text-brand-brown-dark mb-2">{todayMenu.soup}</h3>
+                  </div>
+                  <div className="text-center w-full">
                     <span className="text-sm font-semibold text-brand-teal tracking-wider uppercase block mb-2">ANA YEMEK</span>
-                    <h3 className="font-serif text-2xl font-bold text-brand-brown-dark mb-2">{todayMenu.meals.mainDish}</h3>
+                    <h3 className="font-serif text-2xl font-bold text-brand-brown-dark mb-2">{todayMenu.mainDish}</h3>
+                    {todayMenu.secondDish && <p className="text-sm text-gray-500">veya {todayMenu.secondDish}</p>}
                   </div>
                   <div className="text-center w-full">
-                    <span className="text-sm font-semibold text-brand-teal tracking-wider uppercase block mb-2">PİLAV / MAKARNA</span>
-                    <h3 className="font-serif text-xl font-bold text-brand-brown-dark mb-2">{todayMenu.meals.rice}</h3>
-                  </div>
-                  <div className="text-center w-full">
-                    <span className="text-sm font-semibold text-brand-teal tracking-wider uppercase block mb-2">ÇORBA / SALATA</span>
-                    <h3 className="font-serif text-xl font-bold text-brand-brown-dark mb-2">{todayMenu.meals.soup} + {todayMenu.meals.salad}</h3>
+                    <span className="text-sm font-semibold text-brand-teal tracking-wider uppercase block mb-2">YARDIMCI YEMEK</span>
+                    <h3 className="font-serif text-xl font-bold text-brand-brown-dark mb-2">{todayMenu.side}</h3>
                   </div>
                 </div>
 
@@ -180,9 +188,9 @@ export default function Home() {
             </div>
           ) : (
             <div className="text-center py-12">
-              <p className="text-gray-500 text-lg mb-4">Hafta sonu hizmet vermiyoruz.</p>
+              <p className="text-gray-500 text-lg mb-4">Bugün için menü bulunamadı veya hafta sonu.</p>
               <Link href="/menu" className="btn-primary">
-                Haftalık Menüyü İncele
+                Aylık Menüyü İncele
               </Link>
             </div>
           )}

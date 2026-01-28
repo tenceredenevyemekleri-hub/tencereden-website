@@ -4,31 +4,46 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import menuData from '@/data/menu.json';
 
-interface DayMeals {
-    soup: string | null;
-    mainDish: string | null;
-    rice: string | null;
-    salad: string | null;
-    dessert: string | null;
-    drink: string | null;
-}
-
+// Interfaces matching new structure
 interface DayMenu {
-    day: string;
     date: string;
-    meals: DayMeals;
+    day: string;
+    soup: string;
+    mainDish: string;
+    secondDish: string;
+    side: string;
+    extra: string;
+    calories: string;
 }
 
 interface Week {
-    weekNumber: number;
-    weekStart: string;
-    weekEnd: string;
+    week: number;
     days: DayMenu[];
+}
+
+interface Month {
+    month: string;
+    weeks: Week[];
+}
+
+interface Plan {
+    id: number;
+    name: string;
+    description: string;
+    pricePerDay: number;
+    features: string[];
+    popular: boolean;
+    note?: string;
 }
 
 export default function AdminMenuPage() {
     const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [weeks, setWeeks] = useState<Week[]>(menuData.weeklyMenu.weeks as Week[]);
+    // Cast to unknown first to avoid type overlap issues during migration
+    const initialData = menuData as unknown as { months: Month[], monthlyPlans: Plan[] };
+
+    // Manage state for the first month for simplicity in this version
+    const [weeks, setWeeks] = useState<Week[]>(initialData.months?.[0]?.weeks || []);
+    const [plans, setPlans] = useState<Plan[]>(initialData.monthlyPlans || []);
     const [editingWeek, setEditingWeek] = useState<number | null>(null);
     const [isSaving, setIsSaving] = useState(false);
     const [saveMessage, setSaveMessage] = useState('');
@@ -38,24 +53,34 @@ export default function AdminMenuPage() {
         setIsAuthenticated(auth === 'true');
     }, []);
 
-    const handleMealChange = (weekIndex: number, dayIndex: number, field: keyof DayMeals, value: string) => {
+    const handleMealChange = (weekIndex: number, dayIndex: number, field: keyof DayMenu, value: string) => {
+        if (field === 'date' || field === 'day') return; // Don't edit date/day names here
+
         setWeeks(prev => {
             const updated = [...prev];
             updated[weekIndex] = {
                 ...updated[weekIndex],
                 days: updated[weekIndex].days.map((day, i) =>
-                    i === dayIndex ? { ...day, meals: { ...day.meals, [field]: value || null } } : day
+                    i === dayIndex ? { ...day, [field]: value } : day
                 ),
             };
             return updated;
         });
     };
 
+    const handlePlanChange = (planId: number, field: keyof Plan, value: string | number) => {
+        setPlans(prev => prev.map(plan =>
+            plan.id === planId ? { ...plan, [field]: value } : plan
+        ));
+    };
+
     const handleSave = async () => {
         setIsSaving(true);
         try {
+            // In a real app, this would be an API call to save to backend
             await new Promise(resolve => setTimeout(resolve, 1000));
-            setSaveMessage('Menü başarıyla güncellendi!');
+            console.log('Saved data:', { weeks, plans });
+            setSaveMessage('Menü başarıyla güncellendi! (Demo: Veriler konsola yazıldı)');
             setTimeout(() => setSaveMessage(''), 3000);
         } catch {
             setSaveMessage('Bir hata oluştu.');
@@ -82,7 +107,7 @@ export default function AdminMenuPage() {
             {/* Header */}
             <header className="bg-white shadow-soft sticky top-0 z-10">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-center sm:justify-between">
                         <div className="flex items-center gap-4">
                             <Link href="/admin" className="text-gray-500 hover:text-brand-teal">
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -96,7 +121,7 @@ export default function AdminMenuPage() {
                         <button
                             onClick={handleSave}
                             disabled={isSaving}
-                            className="btn-primary flex items-center gap-2"
+                            className="btn-primary flex items-center gap-2 ml-auto sm:ml-0"
                         >
                             {isSaving ? (
                                 <>
@@ -126,17 +151,16 @@ export default function AdminMenuPage() {
             {/* Main */}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="space-y-8">
-                    {weeks.map((week, weekIndex) => (
-                        <div key={week.weekNumber} className="bg-white rounded-2xl shadow-soft overflow-hidden">
+                    {weeks.length === 0 ? (
+                        <div className="text-center py-10">Veri bulunamadı.</div>
+                    ) : weeks.map((week, weekIndex) => (
+                        <div key={week.week} className="bg-white rounded-2xl shadow-soft overflow-hidden">
                             <div
                                 className="flex items-center justify-between p-6 cursor-pointer hover:bg-gray-50 transition-colors"
                                 onClick={() => setEditingWeek(editingWeek === weekIndex ? null : weekIndex)}
                             >
                                 <div className="flex items-center gap-4">
-                                    <span className="day-badge">{week.weekNumber}. Hafta</span>
-                                    <span className="text-gray-500 text-sm">
-                                        {week.weekStart} - {week.weekEnd}
-                                    </span>
+                                    <span className="day-badge">{week.week}. Hafta</span>
                                 </div>
                                 <svg
                                     className={`w-5 h-5 text-gray-400 transition-transform ${editingWeek === weekIndex ? 'rotate-180' : ''}`}
@@ -151,60 +175,60 @@ export default function AdminMenuPage() {
                             {editingWeek === weekIndex && (
                                 <div className="border-t border-gray-100 p-6 space-y-6">
                                     {week.days.map((day, dayIndex) => (
-                                        <div key={day.day} className="border rounded-xl p-4">
+                                        <div key={dayIndex} className="border rounded-xl p-4">
                                             <h3 className="font-semibold text-brand-brown-dark mb-4">{day.day} - {day.date}</h3>
                                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                                 <div>
                                                     <label className="form-label">🍲 Çorba</label>
                                                     <input
                                                         type="text"
-                                                        value={day.meals.soup || ''}
+                                                        value={day.soup || ''}
                                                         onChange={(e) => handleMealChange(weekIndex, dayIndex, 'soup', e.target.value)}
                                                         className="form-input"
                                                     />
                                                 </div>
                                                 <div>
-                                                    <label className="form-label">🍖 Ana Yemek</label>
+                                                    <label className="form-label">🍖 Ana Yemek 1</label>
                                                     <input
                                                         type="text"
-                                                        value={day.meals.mainDish || ''}
+                                                        value={day.mainDish || ''}
                                                         onChange={(e) => handleMealChange(weekIndex, dayIndex, 'mainDish', e.target.value)}
                                                         className="form-input"
                                                     />
                                                 </div>
                                                 <div>
-                                                    <label className="form-label">🍚 Pilav/Makarna</label>
+                                                    <label className="form-label">🍗 Ana Yemek 2</label>
                                                     <input
                                                         type="text"
-                                                        value={day.meals.rice || ''}
-                                                        onChange={(e) => handleMealChange(weekIndex, dayIndex, 'rice', e.target.value)}
+                                                        value={day.secondDish || ''}
+                                                        onChange={(e) => handleMealChange(weekIndex, dayIndex, 'secondDish', e.target.value)}
                                                         className="form-input"
                                                     />
                                                 </div>
                                                 <div>
-                                                    <label className="form-label">🥗 Salata</label>
+                                                    <label className="form-label">🍚 Y. Yemek</label>
                                                     <input
                                                         type="text"
-                                                        value={day.meals.salad || ''}
-                                                        onChange={(e) => handleMealChange(weekIndex, dayIndex, 'salad', e.target.value)}
+                                                        value={day.side || ''}
+                                                        onChange={(e) => handleMealChange(weekIndex, dayIndex, 'side', e.target.value)}
                                                         className="form-input"
                                                     />
                                                 </div>
                                                 <div>
-                                                    <label className="form-label">🍰 Tatlı</label>
+                                                    <label className="form-label">🥗 Ekstra</label>
                                                     <input
                                                         type="text"
-                                                        value={day.meals.dessert || ''}
-                                                        onChange={(e) => handleMealChange(weekIndex, dayIndex, 'dessert', e.target.value)}
+                                                        value={day.extra || ''}
+                                                        onChange={(e) => handleMealChange(weekIndex, dayIndex, 'extra', e.target.value)}
                                                         className="form-input"
                                                     />
                                                 </div>
                                                 <div>
-                                                    <label className="form-label">🥤 İçecek</label>
+                                                    <label className="form-label">🥤 Kalori/İçecek</label>
                                                     <input
                                                         type="text"
-                                                        value={day.meals.drink || ''}
-                                                        onChange={(e) => handleMealChange(weekIndex, dayIndex, 'drink', e.target.value)}
+                                                        value={day.calories || ''}
+                                                        onChange={(e) => handleMealChange(weekIndex, dayIndex, 'calories', e.target.value)}
                                                         className="form-input"
                                                     />
                                                 </div>
@@ -224,7 +248,7 @@ export default function AdminMenuPage() {
                     </h2>
                     <div className="bg-white rounded-2xl shadow-soft p-6">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {menuData.monthlyPlans.map((plan) => (
+                            {plans.map((plan) => (
                                 <div key={plan.id} className="p-4 border rounded-xl">
                                     <h3 className="font-semibold text-brand-brown-dark mb-2">{plan.name}</h3>
                                     <div className="space-y-3">
@@ -232,7 +256,8 @@ export default function AdminMenuPage() {
                                             <label className="form-label">Günlük Fiyat (₺)</label>
                                             <input
                                                 type="number"
-                                                defaultValue={plan.pricePerDay}
+                                                value={plan.pricePerDay}
+                                                onChange={(e) => handlePlanChange(plan.id, 'pricePerDay', Number(e.target.value))}
                                                 className="form-input"
                                             />
                                         </div>
