@@ -1,14 +1,14 @@
 {
   "months": [
     {
-      "month": "Şubat 2026",
+      "month": "Ocak 2026",
       "weeks": [
         {
           "week": 1,
           "days": [
             {
-              "date": "2026-01-01",
-              "day": "Perşembe",
+              "date": "2026-01-02",
+              "day": "Cuma",
               "soup": "MANTAR ÇORBASI",
               "mainDish": "ÇÖKERTME KEBABI",
               "secondDish": "",
@@ -17,14 +17,24 @@
               "calories": "BARDAK YOĞURT"
             },
             {
-              "date": "2026-01-02",
-              "day": "Cuma",
+              "date": "2026-01-03",
+              "day": "Cumartesi",
               "soup": "EZOGELİN ÇORBASI",
               "mainDish": "ET DÖNER+PATATES KIZARTMA",
               "secondDish": "IZGARA KÖFTE",
               "side": "ARP.ŞEH. PİRİNÇ PİLAVI",
               "extra": "BULGUR PİLAVI",
               "calories": "KOLA"
+            },
+            {
+              "date": "2026-01-04",
+              "day": "Pazar",
+              "soup": "YAYLA ÇORBASI",
+              "mainDish": "FIRIN BUT",
+              "secondDish": "",
+              "side": "SOSLU BURGU MAKARNA",
+              "extra": "",
+              "calories": "AYRAN"
             }
           ]
         },
@@ -34,6 +44,16 @@
             {
               "date": "2026-01-05",
               "day": "Pazartesi",
+              "soup": "",
+              "mainDish": "",
+              "secondDish": "",
+              "side": "",
+              "extra": "",
+              "calories": ""
+            },
+            {
+              "date": "2026-01-06",
+              "day": "Salı",
               "soup": "SÜZME MERCİMEK ÇORBASI",
               "mainDish": "KAŞARLI TEPSİ KÖFTE",
               "secondDish": "TAVUK SARMA",
@@ -42,8 +62,8 @@
               "calories": "BAL BADEM TATLISI"
             },
             {
-              "date": "2026-01-06",
-              "day": "Salı",
+              "date": "2026-01-07",
+              "day": "Çarşamba",
               "soup": "TAVUK SUYU ÇORBASI",
               "mainDish": "KURU FASÜLYE",
               "secondDish": "ETLİ BARBUNYA",
@@ -52,8 +72,8 @@
               "calories": "CACIK+ACI BİBER"
             },
             {
-              "date": "2026-01-07",
-              "day": "Çarşamba",
+              "date": "2026-01-08",
+              "day": "Perşembe",
               "soup": "ERİŞTE.YEŞİL MER.ÇORBA",
               "mainDish": "TAVUK FLEMİNYUM",
               "secondDish": "İZMİR KÖFTE",
@@ -62,8 +82,8 @@
               "calories": "KAZANDİBİ TATLISI"
             },
             {
-              "date": "2026-01-08",
-              "day": "Perşembe",
+              "date": "2026-01-09",
+              "day": "Cuma",
               "soup": "DÜĞÜN ÇORBASI",
               "mainDish": "ETLİ BEZELYE YEMEĞİ",
               "secondDish": "ORDORV MENÜ",
@@ -72,14 +92,24 @@
               "calories": "MEVSİM MEYVE"
             },
             {
-              "date": "2026-01-09",
-              "day": "Cuma",
+              "date": "2026-01-10",
+              "day": "Cumartesi",
               "soup": "KROTONLU DOMATES ÇORBASI",
               "mainDish": "KADIBUDU KÖFTE",
               "secondDish": "TAS KEBABI",
               "side": "SOSLU FİYONK MAKARNA",
               "extra": "ERİŞTE MAKARNA",
               "calories": "AYRAN"
+            },
+            {
+              "date": "2026-01-11",
+              "day": "Pazar",
+              "soup": "EZOGELİN ÇORBASI",
+              "mainDish": "İSKENDER",
+              "secondDish": "",
+              "side": "SADE TEREYAĞLI PİRİNÇ PİLAVI",
+              "extra": "",
+              "calories": "KOLA"
             }
           ]
         },
@@ -89,6 +119,16 @@
             {
               "date": "2026-01-12",
               "day": "Pazartesi",
+              "soup": "",
+              "mainDish": "",
+              "secondDish": "",
+              "side": "",
+              "extra": "",
+              "calories": ""
+            },
+            {
+              "date": "2026-01-13",
+              "day": "Salı",
               "soup": "BROKOLİ ÇORBA",
               "mainDish": "PİLİÇ IZGARA+BİBER DOMATES",
               "secondDish": "SULU KÖFTE",
@@ -97,8 +137,8 @@
               "calories": "MEVSİM SALATA"
             },
             {
-              "date": "2026-01-13",
-              "day": "Salı",
+              "date": "2026-01-14",
+              "day": "Çarşamba",
               "soup": "EZOGELİN ÇORBASI",
               "mainDish": "KIYMALI ISPANAK",
               "secondDish": "KAŞARLI SANDAL SEFASI",
@@ -107,8 +147,8 @@
               "calories": "BARDAK YOĞURT"
             },
             {
-              "date": "2026-01-14",
-              "day": "Çarşamba",
+              "date": "2026-01-15",
+              "day": "Perşembe",
               "soup": "İŞKEMBE ÇORBASI",
               "mainDish": "KÜRDAN KÖFTE",
               "secondDish": "FIRIN KANAT",
@@ -117,8 +157,8 @@
               "calories": "MEVSİM MEYVE"
             },
             {
-              "date": "2026-01-15",
-              "day": "Perşembe",
+              "date": "2026-01-16",
+              "day": "Cuma",
               "soup": "SÜZME MERCİMEK ÇORBA",
               "mainDish": "ANTEP USULÜ BİBER DOLMA",
               "secondDish": "KIYMALI KARNABAHAR",
@@ -127,14 +167,24 @@
               "calories": "BARDAK YOĞURT"
             },
             {
-              "date": "2026-01-16",
-              "day": "Cuma",
+              "date": "2026-01-17",
+              "day": "Cumartesi",
               "soup": "TOYGA ÇORBA",
               "mainDish": "ÇOBAN KAVURMA",
               "secondDish": "ORMAN KEBABI",
               "side": "ARP.ŞEH. PİRİNÇ PİLAVI",
               "extra": "ERİŞTE MAKARNA",
               "calories": "HAVUÇ DİLİM BAKLAVA TATLISI"
+            },
+            {
+              "date": "2026-01-18",
+              "day": "Pazar",
+              "soup": "EZOGELİN ÇORBASI",
+              "mainDish": "TAVUK TANTUNİ +LAVAŞ",
+              "secondDish": "",
+              "side": "BULGUR PİLAVI",
+              "extra": "",
+              "calories": "AYRAN"
             }
           ]
         },
@@ -144,6 +194,16 @@
             {
               "date": "2026-01-19",
               "day": "Pazartesi",
+              "soup": "",
+              "mainDish": "",
+              "secondDish": "",
+              "side": "",
+              "extra": "",
+              "calories": ""
+            },
+            {
+              "date": "2026-01-20",
+              "day": "Salı",
               "soup": "CENNET ÇORBASI",
               "mainDish": "ETLİ NOHUT",
               "secondDish": "KIYMALI FIRIN PATATES",
@@ -152,8 +212,8 @@
               "calories": "CACIK+ACI BİBER"
             },
             {
-              "date": "2026-01-20",
-              "day": "Salı",
+              "date": "2026-01-21",
+              "day": "Çarşamba",
               "soup": "SÜZME MERCİMEK ÇORBASI",
               "mainDish": "ÇITIR TAVUK+PÜRELİ",
               "secondDish": "EKŞİLİ KÖFTE",
@@ -162,8 +222,8 @@
               "calories": "AYRAN"
             },
             {
-              "date": "2026-01-21",
-              "day": "Çarşamba",
+              "date": "2026-01-22",
+              "day": "Perşembe",
               "soup": "MANTAR ÇORBASI",
               "mainDish": "KIYMALI TAZE FASÜLYE",
               "secondDish": "PATLICAN MUSAKKA",
@@ -172,8 +232,8 @@
               "calories": "REVANİ TATLISI"
             },
             {
-              "date": "2026-01-22",
-              "day": "Perşembe",
+              "date": "2026-01-23",
+              "day": "Cuma",
               "soup": "ŞEHRİYE ÇORBASI",
               "mainDish": "ARNAVUT CİĞERİ",
               "secondDish": "SOYA SOSLU TAVUK",
@@ -182,14 +242,24 @@
               "calories": "KOLA"
             },
             {
-              "date": "2026-01-23",
-              "day": "Cuma",
+              "date": "2026-01-24",
+              "day": "Cumartesi",
               "soup": "ERİŞTELİ YEŞİL MERCİMEK ÇORBASI",
               "mainDish": "HASANPAŞA KÖFTE",
               "secondDish": "YUFKA KEBABI",
               "side": "BULGUR PİLAVI",
               "extra": "FIRIN MAKARNA",
               "calories": "SÜTLAÇ"
+            },
+            {
+              "date": "2026-01-25",
+              "day": "Pazar",
+              "soup": "ANTEP ÇORBASI",
+              "mainDish": "KIYMALI PİDE",
+              "secondDish": "",
+              "side": "İÇLİ KÖFTE",
+              "extra": "",
+              "calories": "KOLA"
             }
           ]
         },
@@ -199,6 +269,16 @@
             {
               "date": "2026-01-26",
               "day": "Pazartesi",
+              "soup": "",
+              "mainDish": "",
+              "secondDish": "",
+              "side": "",
+              "extra": "",
+              "calories": ""
+            },
+            {
+              "date": "2026-01-27",
+              "day": "Salı",
               "soup": "SÜZME MERCİMEK ÇORBASI",
               "mainDish": "TAVUK DÖNER",
               "secondDish": "HAMBURGER",
@@ -207,8 +287,8 @@
               "calories": "AYRAN"
             },
             {
-              "date": "2026-01-27",
-              "day": "Salı",
+              "date": "2026-01-28",
+              "day": "Çarşamba",
               "soup": "TAVUK SUYU ÇORBASI",
               "mainDish": "ETLİ KURU FASÜLYE",
               "secondDish": "KIYMALI YEŞİL MERCİMEK",
@@ -217,8 +297,8 @@
               "calories": "TURŞU KARIŞIK"
             },
             {
-              "date": "2026-01-28",
-              "day": "Çarşamba",
+              "date": "2026-01-29",
+              "day": "Perşembe",
               "soup": "TARHANA ÇORBASI",
               "mainDish": "ISPANAK ÇANAKLI KÖFTE",
               "secondDish": "TAVUK STRAGANOF",
@@ -227,8 +307,8 @@
               "calories": "MEVSİM MEYVE"
             },
             {
-              "date": "2026-01-29",
-              "day": "Perşembe",
+              "date": "2026-01-30",
+              "day": "Cuma",
               "soup": "KAŞIK ÇORBASI",
               "mainDish": "ETLİ FIRIN GÜVEÇ YEMEĞİ",
               "secondDish": "KAĞIT KEBABI",
@@ -237,8 +317,8 @@
               "calories": "SUSAMLI ŞEKERPARE TATLISI"
             },
             {
-              "date": "2026-01-30",
-              "day": "Cuma",
+              "date": "2026-01-31",
+              "day": "Cumartesi",
               "soup": "EZOGELİN ÇORBASI",
               "mainDish": "SPECİAL PİRZOLA",
               "secondDish": "HİNDİ TANDR",
@@ -249,8 +329,36 @@
           ]
         }
       ]
+    },
+    {
+      "month": "Şubat 2026",
+      "weeks": [
+        {
+          "week": 1,
+          "days": [
+            {
+              "date": "2026-02-01",
+              "day": "Pazar",
+              "soup": "ŞEHRİYE ÇORBASI",
+              "mainDish": "PİZZA",
+              "secondDish": "",
+              "side": "MAKARNA SPAGETTİ",
+              "extra": "",
+              "calories": "KOLA"
+            }
+          ]
+        }
+      ]
     }
   ],
+  "categories": {
+    "soup": "Çorba",
+    "mainDish": "Ana Yemek Seçenek 1 ",
+    "secondDish": "Ana Yemek Seçenek 2",
+    "side": "Pilav/Makarna Seçenek 1",
+    "extra": "Pilav/Makarna Seçenek 2",
+    "calories": "Yan Ürün"
+  },
   "monthlyPlans": [
     {
       "id": 1,
